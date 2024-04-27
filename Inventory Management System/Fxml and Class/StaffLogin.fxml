@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" translateX="-5.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <Button fx:id="viewOrderButton" layoutX="222.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleViewOrder" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="View Order" />
+    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="208.0" mnemonicParsing="false" onAction="#processOrder" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Process Order" />
+    <Button alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="253.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="133.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Track Shipment" />
+    <Label alignment="CENTER" layoutX="158.0" layoutY="101.0" prefHeight="36.0" prefWidth="262.0" text="Menu">
+        <font>
+            <Font size="26.0" />
+        </font>
+    </Label>
+   <Label layoutX="81.0" layoutY="-2.0" prefHeight="82.0" prefWidth="527.0" style="-fx-background-color: #c0c0c0; -fx-font-size: 24;" text="   STAFF" />
+   <ImageView fitHeight="81.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@WhatsApp Image 2023-08-28 at 5.02.49 PM.jpeg" />
+      </image>
+   </ImageView>
+<!--   <Button  onAction="#handleLogOut" layoutX="248.0" layoutY="303.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Go Back" />-->
+   <Button  onAction="#handleLogOut" layoutX="510.0" layoutY="25.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: maroon; -fx-text-fill: white;" text="Log Out" />
+</AnchorPane>

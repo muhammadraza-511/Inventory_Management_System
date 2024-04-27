@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.inventoryController">
+
+    <VBox fx:id="centeredVBox" alignment="CENTER" layoutX="226.0" layoutY="111.0" spacing="10" />
+      <Button fx:id="reportButton" layoutX="236.0" layoutY="234.0" onAction="#reportsgeneration" prefHeight="30.0" prefWidth="127.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Generate Report" />
+      <Button layoutX="236.0" layoutY="185.0" onAction="#manageaccount" prefHeight="30.0" prefWidth="127.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Manage Accounts" />
+      <Button layoutX="236.0" layoutY="141.0" onAction="#manageinventory" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Manage Inventory" />
+   <ImageView fitHeight="83.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@WhatsApp%20Image%202023-08-28%20at%205.02.49%20PM.jpeg" />
+      </image>
+   </ImageView>
+   <Label layoutX="82.0" prefHeight="83.0" prefWidth="517.0" style="-fx-background-color: #c0c0c0; -fx-font-size: 24;" text="  Manager" />
+<!--   <Button onAction="#handleLogOut" layoutX="266.0" layoutY="285.0" mnemonicParsing="false" style="-fx-background-color: #2f4f4f; -fx-text-fill: white;" text="Go Back" />-->
+   <Button onAction="#handleLogOut" layoutX="519.0" layoutY="27.0" mnemonicParsing="false" style="-fx-background-color: #800000; -fx-text-fill: white;" text="Log Out" />
+
+</AnchorPane>

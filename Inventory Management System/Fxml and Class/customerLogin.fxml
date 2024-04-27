@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" translateX="-5.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+      <Label alignment="CENTER" layoutX="186.0" layoutY="106.0" prefHeight="36.0" prefWidth="262.0" text="Menu">
+          <font>
+              <Font size="26.0" />
+          </font>
+      </Label>
+      <Button fx:id="viewButton" onAction="#handleViewItemsforCustomer" alignment="CENTER" contentDisplay="CENTER" layoutX="229.0" layoutY="168.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Search Inventory Items" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="215.0" mnemonicParsing="false" onAction="#DoOrder" prefHeight="32.0" prefWidth="178.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Place Order" />
+   <Label layoutX="82.0" prefHeight="82.0" prefWidth="527.0" style="-fx-background-color: #c0c0c0; -fx-font-size: 24;" text="    CUSTOMER" />
+   <ImageView fitHeight="82.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@WhatsApp Image 2023-08-28 at 5.02.49 PM.jpeg" />
+      </image>
+   </ImageView>
+   <Button onAction="#handleLogOut"  layoutX="506.0" layoutY="26.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: maroon; -fx-text-fill: white;" text="Log Out" />
+</AnchorPane>

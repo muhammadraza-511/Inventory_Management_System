@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <children>
+        <Label layoutX="229.0" layoutY="99.0" prefHeight="35.0" prefWidth="238.0" style="-fx-font-size: 24;" text="Place Order" />
+      <Label layoutX="84.0" layoutY="152.0" prefHeight="35.0" prefWidth="124.0" text="Username">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameField" layoutX="200.0" layoutY="154.0" prefHeight="30.0" prefWidth="204.0" />
+        <Label layoutX="84.0" layoutY="197.0" prefHeight="35.0" prefWidth="124.0" text="Item Name">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="itemNameField" layoutX="200.0" layoutY="200.0" prefHeight="30.0" prefWidth="204.0" />
+        <Label layoutX="84.0" layoutY="248.0" prefHeight="35.0" prefWidth="107.0" text="Quantity">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="itemQuantityField" layoutX="200.0" layoutY="251.0" prefHeight="30.0" prefWidth="204.0" />
+        <Button layoutX="274.0" layoutY="299.0" mnemonicParsing="false" onAction="#handleOrder" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Order" />
+        <Label fx:id="error_Message" style="-fx-text-fill: black;" layoutX="66.0" layoutY="340.0"/>
+      <Button onAction="#gotoCustomerMenu"  layoutX="261.0" layoutY="335.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: #2F4F4F; -fx-text-fill: white;" text="Go Back" />
+      <Label layoutX="81.0" prefHeight="82.0" prefWidth="537.0" style="-fx-background-color: #c0c0c0; -fx-font-size: 24;" text="    CUSTOMER" />
+      <ImageView fitHeight="82.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@WhatsApp Image 2023-08-28 at 5.02.49 PM.jpeg" />
+         </image>
+      </ImageView>
+      <Button onAction="#handleLogOut" layoutX="518.0" layoutY="26.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: maroon; -fx-text-fill: white;" text="Log Out" />
+    </children>
+</AnchorPane>
